@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IMDB Clone</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body style="background-color: black;">
+
+        <!-- nav bar -->
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+              <nav class="navbar bg-black " data-bs-theme="dark">
+      
+                <div class="col-2 d-flex justify-content-end">
+                  <a class="navbar-brand" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" alt="IMDB" width="64" height="32">
+                  </a>
+                </div>
+      
+                  <div class="col-2 d-flex justify-content-center align-items-center" >
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                      <button class="navbar-toggler badge rounded-pill" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-brand">Menu</span>
+                      </button>
+                    </div>
+                  </div>
+      
+                <div class="col-2 d-flex justify-content-start">
+                  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        All
+                      </button>
+                    </div>
+                    <input class="form-control me-2"  style="background-color: aliceblue;" type="search" placeholder="Search IMDB" aria-label="Search">
+                  </div>
+                </div>
+      
+                
+                <div class="col d-flex justify-content-center">
+                  <div class="btn">
+                    <button class="btn" type="button">
+                      <span class="navbar">IMDBPro</span>
+                    </button>
+                  </div>
+                </div>
+      
+      
+                <div class="vr" style="color: aliceblue;"></div>
+      
+                <div class="col d-flex justify-content-center">
+                  <button class="btn " type="button" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120v-640q0-33 23.5-56.5T280-840h240v80H280v518l200-86 200 86v-278h80v400L480-240 200-120Zm80-640h240-240Zm400 160v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Z"/></svg>Watchlist
+                  </button>
+                </div>
+      
+                <div class="col-1 d-flex justify-content-center">
+                  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button class="navbar-toggler badge rounded-pill d-flex justify-content-center align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <span class="navbar-brand">Sign In</span>
+                    </button>
+                  </div>
+                </div>
+      
+                <div class="col-2 d-flex justify-content-start">
+                  <div class="btn btn-group">
+                    <button class="btn  btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">EN
+                    </button>
+                    <ul class="dropdown-menu">
+                      ...
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+
+          <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 bg-dark d-flex justify-content-end align-items-center">
+                    <div class="col-6 d-flex justify-content-end">
+                        <a href="https://www.imdb.com/name/nm16369583/bio/?ref_=nm_ov_ql_1" style="text-decoration: none; color: white; font-weight: 500; font-size: 110%;">Biography</a>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <a href="https://www.imdb.com/name/nm16369583/trivia/?ref_=nm_ov_ql_2" style="text-decoration: none; color: white; font-weight: 500; font-size: 110%;">Trivia</a>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <div class="vr" style="color: aliceblue;"></div>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <a href="https://pro.imdb.com/name/nm16369583/?rf=cons_nm_ov_hdr&ref_=cons_nm_ov_hdr" style="text-decoration: none; color: white; font-weight: 500; font-size: 110%;">IMDBPro</a>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <div class="vr" style="color: aliceblue;"></div>
+                    </div>
+                    <div class="col-1 d-flex justify-content-end">
+                        <a href="" style="text-decoration: none; color: white; font-weight: 500; font-size: 110%;"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-140v-320h320v320H80Zm80-80h160v-160H160v160Zm60-340 220-360 220 360H220Zm142-80h156l-78-126-78 126ZM863-42 757-148q-21 14-45.5 21t-51.5 7q-75 0-127.5-52.5T480-300q0-75 52.5-127.5T660-480q75 0 127.5 52.5T840-300q0 26-7 50.5T813-204L919-98l-56 56ZM660-200q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM320-380Zm120-260Z"/></svg> All topics</a>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <div class="vr" style="color: aliceblue;"></div>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 bg-dark d-flex flex-column justify-content-start">
+                    <h1 class="text-light">Owen Cooper</h1>
+                    <p class="text-secondary">Actor</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 bg-dark d-flex flex-column justify-content-end align-items-end">
+                    <h6 class="text-dark-emphasis ">IMDBPro</h6>
+                    <p class="text-secondary">STARMETER</p>
+                </div>
+
+                <div class="col-sm-12 col-md-3 bg-dark">
+                    <a href="https://www.imdb.com/name/nm16369583/mediaviewer/rm553748738/?ref_=nm_ov_ph"><img class="img-fluid" style="border-radius: 5%;" src="https://m.media-amazon.com/images/M/MV5BZTFjOTMxNmUtYTBmYi00MDI5LTlhODQtMWRjYmVlNTY4NTcwXkEyXkFqcGc@._V1_.jpg" alt="Owen Cooper"></a>
+                </div>
+
+
+
+                <div class="col-sm-12 col-md-6 bg-dark">
+                    <video src="https://imdb-video.media-imdb.com/vi2646521881/1434659607842-pgv4ql-1511286028769.mp4?Expires=1744097808&Signature=AMEqiqetmwR1CRupy3UpSQa0IRmZBv0Th8yxhHOAM2gAvmAQSATT7SxUMs9Z3YGNidSR~WocFcPosKMe0JkiI98H3M~PIVvCZBwaatVQdO1DYVtmZ~o9GzVYi6PVBLEnfkmgAhT0J2Ou~-se4~yV73CLHtzdsnXz3TbDd29pmI0XlEEti~EdSYGt86fsjQTrVMRuxClOk9SIDQK3u9qNZw~GUNuj0zTZm9OhrSd51HUWK7juMQT9NqP4l3pGUI5MuwXuKWnKMh1qKG6vo6QkNNOSxxl~J3qVqOaLLYwtCK3lfJZ9MQZRihSsyrHvoDRMwJMhLtsXnK5oA5e0qlzhuQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA"  autoplay ></video>
+                </div>
+
+
+
+                <div class="col-sm-12 col-md-3 bg-dark">
+                    <div class="card bg-dark" style="width: 19rem; height: 200px;">
+                        <div class="card-body">
+                          <a href="#" class="card-link"><h5 class="card-title d-flex justify-content-center align-items-center "><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m460-380 280-180-280-180v360ZM320-240q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z"/></svg></h5></a>
+                          <a href="#" class="card-link"><h6 class="card-subtitle mb-2 text-light flex-column align-items-center justify-content-center d-flex">2 Videos</h6></a>
+                        </div>
+                      </div>
+                      <div class="card bg-dark" style="width: 19rem; height: 200px;">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                </div>
+
+                
+            </div>
+          </div>
+
+
+
+          
+        
+    </body>
+</html>
